@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #f0f2f5;
+    color: #333;
+    direction: rtl;
+    line-height: 1.34;
+    font-family:  Helvetica, Arial, sans-serif;
+
+}
+h2,h3{
+font-weight: 600;
+cursor: default;
+padding: 16px;
+}
+a.back{
+  font-size: 21px;
+  padding: 16px;
+  font-weight: 600;
+  margin: 20px;
+  color: #1877f2;
+  text-decoration: none;
+}
+a:hover.back{
+color: #333;
+padding: 16px;
+
+}
+
+input:not(input[type="submit"]){
+    width: 400px;
+    margin: 12px;
+    padding: 16px;
+    border: 1px solid #dddfe2;
+    background-color: #fff;
+    height: 40px;
+    line-height: 16px;
+    border-radius: 6px;
+    font-size: 18px;
+
+}
+input[type="submit"]{
+    transition: 200ms cubic-bezier(.08,.52,.52,1) background-color, 200ms cubic-bezier(.08,.52,.52,1) box-shadow, 200ms cubic-bezier(.08,.52,.52,1) transform;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 21px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    margin: 0;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    font-size: 24px;
+    text-align: center;
+    height: 800px;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.869);
+    width: 40%;
+    margin:50px auto;
+    border-radius: 4px;
+}
+a{  
+    display: block;
+    margin: 8px;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1877f2;
+    cursor: pointer;
+
+}
+.new{
+    width: max-content;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 48px;
+    padding: 0 16px;
+    background-color: #42b72a;
+    color: #fff;
+    margin: 20px auto;
+    text-decoration: none;
+
+}
+.flex-new{
+    display: inline-block;
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px;
+    text-align: center;
+
+}
+.flex-select{
+    display: inline-block;
+    margin: 20px 16px;
+    text-align: center;
+    padding: 10px;
+
+}
+select{
+    margin: 12px;
+    padding: 8px;
+    border-radius: 4px;
+}
+h6{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.6;
+    word-spacing: 2px;
+    width: 100%;
+    cursor: default;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.container {
+    display: inline;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin: 0 8px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .sm{
+    cursor: default;
+    color: #606770;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 12px;
+    text-align: right;
+  }
